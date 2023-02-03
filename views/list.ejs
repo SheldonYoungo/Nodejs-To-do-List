@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">  
     <title>To-do List</title>
 </head>
 <body>
     
-    <h1><%= kindOfDay %> </h1> 
+    <h1 class="box"><%= kindOfDay %> </h1> 
 
-    <ul>
+    <div class="box">
         <% newListItems.forEach((task) =>{ %>
-            <li><%= task %> </li>
-        <% }) %> 
-    </ul>
-
-    <form action="/" method="post">
-        <input type="text" name="newTask" id="" placeholder="Add a task">
-        <button type="submit">Submit</button>
-    </form>
+            <div class="item">
+                <input type="checkbox">
+                <p><%= task %> </p>
+            </div>
+            <% }) %> 
+            
+        <form action="/" method="post">
+            <input type="text" name="newTask" id="" placeholder="Add a task">
+            <button type="submit">+</button>
+        </form>
+    </div>
 </body>
 </html>

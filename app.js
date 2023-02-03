@@ -6,6 +6,8 @@ const app = express();
 
 app.use(express.urlencoded({extend: true}));
 
+app.use(express.static(`${__dirname}/public`))
+
 app.set('view engine', 'ejs'); // App view engine settled to use ejs
 
 app.get('/', (req, res) => {
