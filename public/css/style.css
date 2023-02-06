@@ -81,3 +81,20 @@ button {
     border-width: 0;
 }
 
+footer {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer i {
+    font-size: 1.5em;
+    color: #00204a;
+    transition: color .5s;
+}
+
+footer i:hover {
+    color: #F1F1F1;
+    transition: color .5s;
+}
