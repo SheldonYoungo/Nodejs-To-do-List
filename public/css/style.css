@@ -26,10 +26,11 @@ p {
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
-.item {
+.item, .checkbox-item {
     min-height: 4.3em;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid #F1F1F1;
 }
 
@@ -40,7 +41,17 @@ input[type='checkbox'] {
 input:checked + p {
     text-decoration: line-through;
     text-decoration-color: #83a8e3;
-  }
+}
+
+#delete-item-btn{
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    background: none;
+    color: #d8dcec;
+    border: none;
+    margin-right: 1em;
+}
 
 input[type='text'] {
     font-family: 'Nunito', sans-serif;
