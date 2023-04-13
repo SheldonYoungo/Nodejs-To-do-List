@@ -4,21 +4,20 @@
 
     <div class="box">
         <% newListItems.forEach((task) =>{ %>
-            <div class="item">
-                <label class="checkbox-item">
-                    <input type="checkbox">
-                    <p><%= task %> </p>
-                </label>
-                <form action="/" method="post">
-                    <button id="delete-item-btn" type="submit" name="button" value="delete">X</button>
-                </form>
-            </div>
+            <form action="/delete" method="post">
+                <div class="item">
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="checkbox" value="<%= task._id %>" onchange="this.form.submit()">
+                        <p><%= task.name %> </p>
+                    </label>
+                </div>
+            </form>
 
             <% }) %> 
             
-        <form action="<%= route %> " method="post">
+        <form class="item" action="/" method="post">
             <input type="text" name="newTask" id="" placeholder="Add a task">
-            <button type="submit" name="button" value="submit">+</button>
+            <button type="submit" name="button" value="<%= listTitle %>">+</button>
         </form>
     </div>
 <%- include('footer') %> 

@@ -43,16 +43,6 @@ input:checked + p {
     text-decoration-color: #83a8e3;
 }
 
-#delete-item-btn{
-    cursor: pointer;
-    font-size: 1.5rem;
-    font-family: 'Nunito', sans-serif;
-    background: none;
-    color: #d8dcec;
-    border: none;
-    margin-right: 1em;
-}
-
 input[type='text'] {
     font-family: 'Nunito', sans-serif;
     height: 73px;
@@ -74,7 +64,7 @@ input[type="text"]:focus {
     opacity: 1;
 }
 
-form {
+form.item {
     display: flex;
     justify-content: space-between;
 }
