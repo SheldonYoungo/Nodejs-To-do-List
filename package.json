@@ -16,7 +16,7 @@
     "mongoose": "^7.0.3"
   },
   "type": "module",
-  "engine": {
+  "engines": {
     "node": ">=14 <15"
   }
 }
