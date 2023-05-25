@@ -9,6 +9,7 @@
                     <label class="checkbox-item">
                         <input type="checkbox" name="checkbox" value="<%= task._id %>" onchange="this.form.submit()">
                         <p><%= task.name %> </p>
+                        <input type="hidden" name="listName" value="<%= listTitle %>"> <!-- input to save the list name which will be used to know which list is where the item is sotred to be deleted -->
                     </label>
                 </div>
             </form>
