@@ -18,4 +18,5 @@
   "type": "module",
   "engine": {
     "node": ">=14 <15"
+  }
 }
